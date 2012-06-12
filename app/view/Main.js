@@ -3,13 +3,11 @@ Ext.define("SearchHash.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'SearchHash.view.MainField
+        'SearchHash.view.MainField'
     ],
     config: {
         tabBarPosition: 'bottom',
 
-        items: [
-            {xtype: 'mainfield' },
-                ]
+        items: {xtype: 'mainfield' }
     }
 });

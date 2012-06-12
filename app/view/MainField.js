@@ -10,23 +10,23 @@ Ext.define('SearchHash.view.MainField', {
         scrollable: true,
 
         items: [
-        {
-            docked: 'top',
-            xtype: 'titlebar',
-            title: 'SearchHash'
-        },
-        {
-            xtype: 'textfield',
-            placeHolder: 'Enter your hashtag',
-        },
-        {
-            xtype: 'button',
-            text: 'Search',
-            ui: 'confirm',
-            handler: function() {
-                this.up('formpanel').submit();
+            {
+                docked: 'top',
+                xtype: 'titlebar',
+                title: 'SearchHash'
+            },
+            {
+                xtype: 'textfield',
+                placeHolder: 'Enter your hashtag',
+            },
+            {
+                xtype: 'button',
+                text: 'Search',
+                ui: 'confirm',
+                handler: function() {
+                    this.up('formpanel').submit();
+                }
             }
-        }
 
         ] 
 
